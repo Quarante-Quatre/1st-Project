@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+
 }
 
 header {
@@ -461,16 +462,16 @@ input::placeholder {
     font-weight: 900;
 
     font-style: normal;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.5;
     letter-spacing: -1.5px;
     text-transform: uppercase;
     position: relative;
     margin-left: 90px;
- color: #152237;
- top: 70px;
+    color: #152237;
+    top: 70px;
 
- }
+}
 
 
 
@@ -490,44 +491,112 @@ input::placeholder {
 
 }
 
-.cree{
+.cree {
     background-color: #44DD8A;
-width: 2000px;
     height: 641px;
     opacity: 1;
     left: 1px;
 
-    img{
+    img {
         margin-left: 55px;
     }
 }
-.creeformation{
+
+.creeformation {
 
     font-family: Montserrat;
     font-weight: 900;
 
     font-style: normal;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.5;
     letter-spacing: -1.5px;
     text-transform: uppercase;
     position: relative;
     margin-left: 912px;
- color: #152237;
- top: 75px;
+    color: #152237;
+    top: 75px;
 
 }
 
-.listcree{
-     font-family: Montserrat;
+.listcree {
+    font-family: Montserrat;
     font-weight: 400;
     font-size: 20px;
-    line-height:40px;
+    line-height: 40px;
     letter-spacing: -1.5px;
     text-align: start;
     position: relative;
     bottom: 400px;
-    margin-left: 977px;
+    margin-left: 850px;
     list-style-type: none;
+
+    li {
+        display: flex;
+        align-items: start;
+    }
+
+}
+
+.aapropos {
+    width: 100%;
+    display: flex;
+
+
+    .proposh3 {
+        font-weight: ;
+        font-style: Black;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: left;
+
+    }
+
+    .apropos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: center;
+        margin-left: 50px;
+
+        h3 {
+            margin-bottom: 20px;
+            color: #152237;
+        }
+    }
+
+    .logo_kli {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: #152237;
+        padding: 250px;
+
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 35px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+    color: #152237;
+    margin-top: 50px;
+
+}
+
+.formulair {
 
 }
