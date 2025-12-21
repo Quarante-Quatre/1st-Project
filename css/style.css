@@ -92,7 +92,11 @@ input::placeholder {
     border-radius: 6px;
     color: #152237;
     background-color: white;
+    border-radius: 6px;
+    color: #152237;
+    background-color: white;
     text-decoration: none;
+
 }
 
 .btn2 {
@@ -196,6 +200,12 @@ input::placeholder {
 }
 
 .card {
+    width: 320px;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
 
     h4 {
         color: #152237;
@@ -262,9 +272,23 @@ input::placeholder {
 .recent {
     background-color: #152237;
     margin-top: 70px;
+    height: auto;
 }
 
 .card2 {
+    width: 320px;
+    position: relative;
+
+    .price-tag {
+        background-color: #fff;
+        p {
+            color: #152237;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
 
     h4 {
         color: white;
@@ -290,9 +314,6 @@ input::placeholder {
     }
 }
 
-.recent {
-    height: 550px;
-}
 
 .btn6 {
     padding: 10px 20px;
@@ -300,7 +321,7 @@ input::placeholder {
     color: #152237;
     background-color: white;
     text-decoration: none;
-    margin-top: 30px;
+
 }
 
 .container2 {
@@ -330,6 +351,9 @@ input::placeholder {
 }
 
 .price-tag {
+    position: absolute;
+    right: 15px;
+    top: 200px;
     width: 90px;
     padding: 2px;
     border-radius: 93px;
@@ -352,7 +376,7 @@ input::placeholder {
     font-family: Montserrat, sans-serif;
     color: #ffffff;
     font-weight: 400;
-    font-style: Regular;
+
     font-size: 10px;
     line-height: 7px;
     letter-spacing: -1.5%;
@@ -430,7 +454,6 @@ input::placeholder {
     font-size: 40px;
     line-height: 36px;
     letter-spacing: -1.5%;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,8 +501,7 @@ input::placeholder {
 
 .klivio2 {
     background-color: #F5F5F5;
-    width: 1800px;
-    height: 641px;
+    width: 100%;
     opacity: 1;
     left: 1px;
 }
@@ -544,7 +566,7 @@ input::placeholder {
 
 
     .proposh3 {
-        font-weight: ;
+
         font-style: Black;
         font-size: 40px;
         text-transform: uppercase;
@@ -598,5 +620,413 @@ input::placeholder {
 }
 
 .formulair {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-weight: 900;
+        font-style: Black;
+        font-size: 40px;
+        line-height: 36px;
+        letter-spacing: -1.5%;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+        textarea {
+            width: 100%;
+            background-color: #152237;
+            color: #ffffff;
+            height: 194px;
+            padding: 1em;
+        }
+
+        .submit {
+
+            border-radius: 5px;
+            color: #152237;
+            width: 350px;
+            background-color: #44dd8a;
+            text-align: center;
+            padding: 8px;
+            margin: 50px;
+            text-decoration: none;
+
+        }
+
+
+
+        div {
+
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            input {
+
+                width: 600px;
+                border: #ffffff solid 1px;
+                background-color: #152237;
+                color: #ffffff;
+                padding: 10px;
+                margin-bottom: 50px;
+            }
+
+            input::placeholder {
+                color: #ffffff;
+            }
+        }
+
+        textarea::placeholder {
+            color: #ffffff;
+        }
+    }
 
 }
+
+.rect {
+    width: 1800px
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5em 3em 0 3em;
+    background-color: #152237;
+
+    .topFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .logo {
+            width: 15%;
+            margin-right: 100px;
+        }
+
+        .info {
+            display: flex;
+
+            /* position: absolute;
+            top: 40px;
+            left: 550px; */
+            .legal {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                margin-left: 50px;
+
+                h4 {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+
+                    img {
+                        padding-right: 0.5em;
+                    }
+
+                    h4 {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: normal;
+                        color: #fff;
+
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .liTitle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+        }
+
+        .btn70 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 300px;
+        }
+
+    }
+
+    .spacer {
+        display: flex;
+        width: 80%;
+        height: 2px;
+        background-color: #44DD8A;
+        margin: 4em 0;
+    }
+}
+
+.left {
+    color: white;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -1.5%;
+    margin-left: 96px;
+}
+
+.bottomFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px;
+margin-bottom: 250px;
+
+}
+
+.social {
+
+
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -1.5%;
+
+    display: flex;
+    align-items: center;
+    gap: 
+
+}
+
+
+
+
+
+
+.bottomFooter .social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.bottomFooter .icons {
+    display: flex;
+    gap: 8px;
+}
+
+.bottomFooter .icons img {
+    display: block;
+    width: 24px;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    
+    .card,
+    .card2 {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .populaires .container-1500.flex,
+    .recent .container-1700.flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    
+    .klivio2 {
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .avantages {
+        bottom: 0;
+        margin-left: 20px;
+    }
+
+    .imgavan {
+        margin-left: 0;
+        max-width: 400px;
+    }
+
+    
+    .cree {
+        height: auto;
+    }
+
+    .listcree {
+        bottom: 0;
+        margin-left: 20px;
+    }
+
+    .creeformation {
+        margin-left: 20px;
+        top: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav img {
+        padding-left: 0;
+        width: 140px;
+    }
+
+    #searchBar {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card,
+    .card2 {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .avis {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    
+    .klivio2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avantagesh3 {
+        margin-left: 0;
+        text-align: center;
+        top: 0;
+    }
+
+    .imgavan {
+        margin: 20px auto 0 auto;
+        max-width: 90%;
+    }
+
+    .avantages {
+        margin-left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    
+    .cree {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .cree img {
+        margin: 0 auto 20px auto;
+        max-width: 90%;
+    }
+
+    .creeformation {
+        margin-left: 0;
+        text-align: center;
+        top: 0;
+    }
+
+    .listcree {
+        margin-left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .listcree li {
+        justify-content: center;
+    }
+
+    
+    .avantages img,
+    .listcree img {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .footer .topFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottomFooter {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
